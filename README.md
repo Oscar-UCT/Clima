@@ -1,6 +1,8 @@
 # OpenClima
 Proyecto que usa la API de OpenWeatherMap para entregar información de clima.\
+\
 [OpenClima](https://teclab.uct.cl/~oscar.cariaga/clima/)\
+\
 Muestra:
 * Hora local de la ciudad
 * Temperatura
