@@ -70,10 +70,11 @@ function countryCodeToEmoji(string $code): string
         <nav class="navbar navbar-expand-lg bg-body-tertiary rounded">
             <div class="container-fluid">
                 <a href="./index.html" class="navbar-brand">OpenClima</a>
+                <a href="https://github.com/oscar-uct/clima" class="nav-link">GitHub</a>
             </div>
         </nav>
     </header>
-    <section class="m-3">
+    <section class="m-3 mb-5">
         <form action="clima.php" class="mb-3">
             <div class="input-group">
                 <span class="input-group-text">Ciudad</span>
@@ -94,7 +95,7 @@ function countryCodeToEmoji(string $code): string
                         <p><?php echo round($data["main"]["temp"]) . "° " . ucwords($data["weather"]["0"]["description"]); ?></p>
                     </div>
                 </div>
-                <div class="col-md-4 m-auto px-5">
+                <div class="col-md-4 m-auto px-lg-5">
                     <div class="fs-5 d-flex align-items-center">
                         <span class="badge">
                             <img src="./assets/imgs/detalles_iconos/sunrise.svg" alt="">
@@ -124,7 +125,7 @@ function countryCodeToEmoji(string $code): string
                         Nubosidad: <?php echo $data["clouds"]["all"] . "%" ?>
                     </div>
                 </div>
-                <div class="col-md-4 m-auto">
+                <div class="col-md-4 m-auto px-lg-5">
                     <div class="fs-5 d-flex align-items-center">
                         <span class="badge">
                             <img src="./assets/imgs/detalles_iconos/humidity.svg" alt="">
@@ -147,9 +148,6 @@ function countryCodeToEmoji(string $code): string
             </div>
         </div>
     </section>
-    <footer class="bd-footer border-top fixed-bottom p-2">
-        <span>&copy; Oscar Cariaga 2025</span>
-    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
 </body>

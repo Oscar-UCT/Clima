@@ -17,6 +17,7 @@ session_start();
         <nav class="navbar navbar-expand-lg bg-body-tertiary rounded">
             <div class="container-fluid">
                 <a href="./index.html" class="navbar-brand">OpenClima</a>
+                <a href="https://github.com/oscar-uct/clima" class="nav-link">GitHub</a>
             </div>
         </nav>
     </header>
