@@ -1,6 +1,6 @@
 # OpenClima
 Proyecto que usa la API de OpenWeatherMap para entregar información de clima.\
-_Este proyecto usa únicamente Bootstrap._\
+_Este proyecto usa únicamente Bootstrap y PHP._\
 \
 [OpenClima](https://teclab.uct.cl/~oscar.cariaga/clima/)\
 \
