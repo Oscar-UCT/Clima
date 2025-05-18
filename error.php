@@ -1,0 +1,40 @@
+<?php
+session_start();
+?>
+
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <title>Clima</title>
+</head>
+
+<body class="text-center">
+    <header class="m-3">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary rounded">
+            <div class="container-fluid">
+                <a href="./index.html" class="navbar-brand">OpenClima</a>
+            </div>
+        </nav>
+    </header>
+    <section class="m-3">
+        <form action="clima.php" class="mb-3">
+            <div class="input-group">
+                <span class="input-group-text">Ciudad</span>
+                <input type="text" name="ciudad" id="ciudad" class="form-control" placeholder="Temuco" required>
+                <button class="btn btn-primary">Buscar</button>
+            </div>
+        </form>
+        <div class="card text-center py-5">
+            <h5><?php echo $_SESSION["error_msg"] ?></h5>
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+</body>
+
+</html>
